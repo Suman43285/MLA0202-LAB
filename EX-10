@@ -1,0 +1,5 @@
+from sklearn.mixture import GaussianMixture
+X = [[1, 2],[2, 1],[1, 1],[5, 6],[6, 5],[5, 5]]
+model = GaussianMixture(n_components=2)
+model.fit(X)
+print("Clusters:", model.predict(X))
